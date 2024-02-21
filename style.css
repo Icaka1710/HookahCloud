@@ -8,6 +8,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Bluebird SFBold Extended";
+  font-size: 20px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -95,6 +96,7 @@ header h4 {
 
   .hero {
     height: 900px;
+    width: auto;
     background-image: url('background.jpg');
     background-size: cover;
     background-position: center;
@@ -108,7 +110,7 @@ header h4 {
   
   .hero h2 {
     font-family: 'Jura', sans-serif;
-    font-size: 36px;
+    font-size: 46px;
   }
   
   .menu {
@@ -165,6 +167,7 @@ header h4 {
     height: 100vh;
     background-color: #161616;
     transition: 1s;
+    font-size: 40px;
   }
 
   .logo-header {
