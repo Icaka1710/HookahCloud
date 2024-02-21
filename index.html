@@ -1,137 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Animated Background with Navbar and Parallax Text</title>
-<style>
-  body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  /* Background Animation */
-  #background {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: black;
-    z-index: -1; /* Преместено зад логото */
-  }
-
-/* Navigation Bar */
-#navbar {
-  position: fixed;
-  bottom: 0; /* Начална позиция */
-  left: 0;
-  width: 100%;
-  height: 0;
-  background-color: white;
-  color: black;
-  text-align: center;
-  font-size: 24px;
-  z-index: 9;
-  opacity: 0;
-  animation: slideNavbar 2.5s 1.5s forwards;
-}
-
-@keyframes slideNavbar {
-  0% {
-    height: 0;
-    bottom: 0; /* Начална позиция */
-  }
-  100% {
-    height: 30%;
-    bottom: 95%; /* Крайна позиция */
-    opacity: 1;
-  }
-}
-
-
-  /* Logo */
-  #logo-container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0.8); /* По-малко от преди */
-    z-index: 10000;
-    animation: moveLogo 2s 1.9s forwards, scaleLogo 1.5s 1.5s forwards;
-  }
-
-  @keyframes moveLogo {
-    0% {
-      top: 50%;
-      left: 50%;
-    }
-    100% {
-      top: 25px;
-    }
-  }
-
-  @keyframes scaleLogo {
-    0% {
-      transform: translate(-50%, -50%) scale(0.8); /* По-малко от преди */
-    }
-    100% {
-      transform: translate(-50%, -50%) scale(0.5);
-    }
-  }
-  
-  /* Parallax Text */
-  #parallax-text {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 28px;
-    z-index: 1000;
-    opacity: 0; /* Начално скрито състояние */
-  }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hookah Cloud - Burrata Paradise</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.cdnfonts.com/css/typo-grotesk" rel="stylesheet">
+                
 </head>
 <body>
 
-<!-- Logo in the center of the page -->
-<div id="logo-container">
-  <img id="logo" src="logo-white.png" alt="Logo">
-</div>
+  <div class="intro">
+    <h1 class="logo-header">
+      <span class="logo">Hookah</span><span class="logo">Cloud</span>
+    </h1>
+  </div>
 
-<!-- Navigation Bar -->
-<div id="navbar">
-</div>
+  <header>
+    <h4>Hookah Cloud</h4>
+  </header>
+  
 
-<!-- Animated Background -->
-<div id="background"></div>
-
-<!-- Parallax Text -->
-<div id="parallax-text">
-  Черен тютюн
-</div>
-
-<!-- JavaScript -->
-<script>
-  window.onload = function() {
-    var background = document.getElementById('background');
-    var logo = document.getElementById('logo');
-    var parallaxText = document.getElementById('parallax-text');
-
-    setTimeout(function() {
-      background.style.animation = "changeBackground 3.5s forwards"; // Start background animation after 1.5s
-      logo.src = 'logo-black.png';
-
-      setTimeout(function() {
-        parallaxText.style.opacity = "1"; // Показване на текста
-      }, 3000); // След 3 секунди, когато завършат другите анимации
-    }, 2150);
-  };
-</script>
-
+  <script src="app.js"></script>
 </body>
 </html>
