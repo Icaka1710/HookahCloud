@@ -12,8 +12,17 @@
   <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap" rel="stylesheet">
   <link href="https://fonts.cdnfonts.com/css/typo-grotesk" rel="stylesheet">
   <link href="https://fonts.cdnfonts.com/css/salma-pro" rel="stylesheet">
-  <link href="https://db.onlinewebfonts.com/c/74bd5f5084d52b0601296767552f32ed?family=Bluebird+SFBold+Extended" rel="stylesheet">
-                
+  <link href="https://db.onlinewebfonts.com/c/74bd5f5084d52b0601296767552f32ed?family=Bluebird+SFBold+Extended"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap" rel="stylesheet">
+  <link href="https://db.onlinewebfonts.com/c/6f0cd4643b13ab5889b7d772ca093555?family=Portico+Outline" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Londrina+Outline&display=swap"
+    rel="stylesheet">
+
 
 </head>
 
@@ -39,34 +48,121 @@
   </header>
 
 
-  
-  
 
 
-  <div class="hero">
+
+
+  <div class="hero" id="hero">
+    <div class="hero-content">
+      <h2 style="font-family: 'Bebas Neue', sans-serif; font-weight: 500; font-style: normal;">Blonde (<span
+          style="font-family: 'Jura', sans-serif; font-size: 50px;">Жълт</span>)</h2>
+      <h2 style="font-family: 'Portico Outline', sans-serif; font-weight: 400; font-style: normal;">Series</h2>
+    </div>
+  </div>
+
+  <script>
+    window.addEventListener('scroll', function () {
+      var menu = document.getElementById('menu');
+      var hero = document.getElementById('hero');
+      var heroHeight = hero.offsetHeight;
+      if (window.pageYOffset > heroHeight) {
+        menu.style.top = '0';
+      } else {
+        menu.style.top = '-' + menu.offsetHeight + 'px';
+      }
+    });
+  </script>
+
+
+
+
+  <div class="home-container-full">
+    <div>
+      <div class="home-container">
+        <span class="home-text">Holster</span>
+        <span class="home-text1">40лв</span>
+      </div>
+    </div>
+    <div class="description">
+      <div class="flavour">
+        <h3>Miss Joosy</h3>
+        <p class="description1">В този аромат се срещат рубиненочервени малини с безкрайно сладки ягоди.</p>
+        <p class="hash">#Малина #Ягода #Горски Плодове</p>
+      </div>
+    </div>
+    <div class="description">
+      <div class="flavour">
+        <h3>Watermill Punch</h3>
+        <p class="description1">Пет различни вкуса на диня, с нотка свежа прохлада.</p>
+        <p class="hash">#Диня #Мента</p>
+      </div>
+    </div>
+    <div class="description">
+      <div class="flavour">
+        <h3>Booster</h3>
+        <p class="description1">Силен ментол.</p>
+        <p class="hash">#Ментол</p>
+      </div>
+    </div>
+    <div class="description">
+      <div class="flavour">
+        <h3>Ice Kaktuz</h3>
+        <p class="description1">Композиция от кисели вкусове и кактуз.</p>
+        <p class="hash">#Кактус</p>
+      </div>
+    </div>
   </div>
 
 
 
-  <div class="menu">
-    <h2>Жълт тютюн</h2>
-    <ul>
-      <li>
-        <h3>Holster</h3>
-        <ul>
-          <li>
-            <ul>
-              <li>Miss Joosy</li>
-              <li>Booster</li>
-              <li>Watermill Punch</li>
-            </ul>
-          </li>
-        </ul>
-      </li>
-      <!-- Добавете други марки тютюн с вкусове по същия начин, ако има -->
-    </ul>
+  <div class="home-container-full">
+    <div>
+      <div class="home-container">
+        <span class="home-text">O'S</span>
+        <span class="home-text1">40лв</span>
+      </div>
+    </div>
+    <div class="description">
+      <div class="flavour">
+        <h3>Lucifero</h3>
+        <p class="description1">Вкус на ябълка, ягода и мента, известен с плътния си дим.</p>
+        <p class="hash">#Ябълка #Ягода #Мента</p>
+      </div>
+    </div>
+    <div class="description">
+      <div class="flavour">
+        <h3>African Queen</h3>
+        <p class="description1">Плодов микс от 16 различни вкуса.</p>
+        <p class="hash">#Плодов Микс</p>
+      </div>
+    </div>
+    <div class="description">
+      <div class="flavour">
+        <h3>Bonnie ‘n Clyde</h3>
+        <p class="description1">Зелена сочна ябълка с хладна нотка мента.</p>
+        <p class="hash">#Ябълка #Мента</p>
+      </div>
+    </div>
+    <div class="description">
+      <div class="flavour">
+        <h3>Disco</h3>
+        <p class="description1">Наситена сладка праскова с мента.</p>
+        <p class="hash">#Праскова #Мента</p>
+      </div>
+    </div>
   </div>
-  
+
+
+
+  <div class="hero" id="hero">
+    <div class="hero-content">
+      <h2 style="font-family: 'Bebas Neue', sans-serif; font-weight: 500; font-style: normal;">Dark (<span
+          style="font-family: 'Jura', sans-serif; font-size: 50px;">Черен</span>)</h2>
+      <h2 style="font-family: 'Portico Outline', sans-serif; font-weight: 400; font-style: normal;">Series</h2>
+    </div>
+  </div>
+
+
 
 
 
