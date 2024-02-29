@@ -11,6 +11,12 @@
   font-size: 20px;
 }
 
+
+body{
+  width: 100%;
+}
+
+
 @media only screen and (max-width: 600px) {
   .navbar {
     padding: 10px;
@@ -26,25 +32,20 @@
   }
 }
 
-header {
-  position: relative;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 80px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  z-index: 2;
-}
+
+
 
 header {
-    position: relative;
+    position: fixed; /* Променено от relative на fixed */
     left: 0;
     top: 0;
     width: 100%;
     height: 80px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     z-index: 2;
-  }
+    background-color: white;
+}
+
 
   .logo-container {
     display: inline-block;
@@ -67,6 +68,7 @@ header h4 {
 
   .tekst{
     padding:15px;
+    overflow: hidden;
   }
 
   .background-image {
@@ -89,7 +91,6 @@ header h4 {
     font-size: 2rem;
     margin: 0;
     color: black;
-    font-weight: 50;
   }
 
 
@@ -97,64 +98,63 @@ header h4 {
   .hero {
     height: 900px;
     width: auto;
-    background-image: url('background.jpg');
-    background-size: cover;
-    background-position: center;
+    background-color: black;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
     color: white;
     z-index: -5;
-  }
-  
-  .hero h2 {
-    font-family: 'Jura', sans-serif;
+    overflow-x: hidden;
+}
+
+.hero h2 {
     font-size: 46px;
-  }
+    margin: 0;
+    
+}
+
+
+.home-container-full{
+  background-color: #e5e7eb;
+}
   
-  .menu {
-    background-color: rgba(255, 255, 255, 0.8);
-    border-radius: 10px;
-    padding: 20px;
-    margin-top: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  }
-  
-  .menu h2 {
-    font-family: 'Jura', sans-serif;
-    font-size: 24px;
-    color: #333;
-    text-align: center;
-  }
-  
-  .menu ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .menu ul li {
-    margin-bottom: 15px;
-  }
-  
-  .menu ul li h3 {
-    font-family: 'Jura', sans-serif;
-    font-size: 20px;
-    color: #333;
-  }
-  
-  .menu ul li ul {
-    margin-top: 10px;
-  }
-  
-  .menu ul li ul li {
-    margin-bottom: 5px;
-  }
-  
-  .menu ul li ul li:last-child {
-    margin-bottom: 0;
-  }
-  
+.home-container {
+  display: flex;
+  justify-content: space-between; /* Разпределя елементите равномерно */
+  align-items: center; /* Центрира елементите вертикално */
+  padding: 20px;
+  background-color: black;
+}
+
+.home-text {
+  order: 1; /* Позиционира го наляво */
+  font-size: 40px;
+  color:white;
+}
+
+.home-text1 {
+  order: 2; /* Позиционира го надясно */
+  font-size: 30px;
+  color:white;
+  font-family: 'Jura', sans-serif;
+}
+
+.description {
+  padding: 20px;
+}
+
+.description1{
+  font-family: 'Jura', sans-serif;
+  color: #929da8;
+}
+
+ .hash {
+  color: #3a0ca3;
+  font-family: 'Jura', sans-serif;
+}
+
 
 /* animation */
 
